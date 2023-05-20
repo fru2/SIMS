@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">SIMS</string>
+
+
+    <!--    studentManagementApp-title-->
+    <string name="title">OTP Verification</string>
+    <string name="sub_title">Enter the code from the sms we sent\nto +91 493743784</string>
+    <string name="receive">I didn\'t receive any code</string>
+    <string name="zero">00:00</string>
+    <string name="resend">RESEND</string>
+    <string name="submit">Submit</string>
+    <!--    courseMaterial-title2-->
+    <string name="bookImage">Book Image</string>
+    <string name="card">Card</string>
+    <string name="title2">Course Materials</string>
+    <string name="menu">menu</string>
+    <string name="java">\nJAVA</string>
+    <string name="dbms">\nDBMS</string>
+    <string name="kotlin">\nKOTLIN</string>
+    <string name="cpp">\nC++</string>
+    <string name="dsa">\nDSA</string>
+    <string name="net">\n.NET</string>
+    <string name="python">\nPYTHON</string>
+    <string name="c">\nC</string>
+    <!--    onlineTextbooks-title3-->
+    <string name="title3">Online Textbooks</string>
+    <!--    payments-title4-->
+    <string name="title4">Payments</string>
+    <string name="hostel_allocation">\nHostel Allocation</string>
+    <string name="textbooks">\nTextbooks</string>
+    <string name="club_society"><![CDATA[\nClub & Society]]></string>
+    <string name="extra">\nExtra</string>
+    <string name="school_transfer">\nSchool Transfer</string>
+    <string name="tuition">\nTuition</string>
+    <!--    notifications-title5-->
+    <string name="title5">Settings</string>
+    <string name="live_lectures">Live Lectures</string>
+    <string name="events">Events</string>
+    <string name="clubs">Clubs</string>
+    <string name="fee_remainder">Fee Remainder</string>
+    <string name="save_changes">Save Changes</string>
+
 </resources>

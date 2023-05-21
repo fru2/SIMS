@@ -25,9 +25,9 @@
         android:contentDescription="Notificaion button"
         android:padding="20dp"
         android:src="@drawable/ic_alarm"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/imageButton"
-        app:layout_constraintBottom_toBottomOf="@id/imageButton"/>
+        app:layout_constraintTop_toTopOf="@id/imageButton" />
 
     <TextView
         android:id="@+id/textView"

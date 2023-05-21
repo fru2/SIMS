@@ -39,5 +39,6 @@
     <string name="clubs">Clubs</string>
     <string name="fee_remainder">Fee Remainder</string>
     <string name="save_changes">Save Changes</string>
+    <string name="profile_photo">Profile Photo</string>
 
 </resources>

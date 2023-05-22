@@ -51,8 +51,9 @@
     <string name="assignment_due_date">Assignment due on the 21st of May at 11:59 pm</string>
     <string name="progressPercentage">68%</string>
     <string name="course_outline_progress">Course Outline Progress</string>
-    <string name="attendence">Attendence</string>
+    <string name="attendance">Attendance</string>
     <string name="details">Details</string>
     <string name="xxxx">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
-
+<!--        summary-title6-->
+    <string name="title6">Summary</string>
 </resources>

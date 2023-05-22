@@ -121,7 +121,7 @@
 
 
         <ImageView
-            android:id="@+id/book1"
+            android:id="@+id/miniProfileLogo"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="270sp"

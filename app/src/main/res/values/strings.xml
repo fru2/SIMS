@@ -40,5 +40,19 @@
     <string name="fee_remainder">Fee Remainder</string>
     <string name="save_changes">Save Changes</string>
     <string name="profile_photo">Profile Photo</string>
+    <string name="dsa_cc_11">DSA CC-11</string>
+    <string name="prof_xxx">Prof xxx</string>
+    <string name="menu_button">Menu button</string>
+    <string name="Assignments">Assignments</string>
+    <string name="group_work">Group Work</string>
+    <string name="_2_5">2 / 5</string>
+    <string name="_2_2">2 / 2</string>
+    <string name="submission">Submission:</string>
+    <string name="assignment_due_date">Assignment due on the 21st of May at 11:59 pm</string>
+    <string name="progressPercentage">68%</string>
+    <string name="course_outline_progress">Course Outline Progress</string>
+    <string name="attendence">Attendence</string>
+    <string name="details">Details</string>
+    <string name="xxxx">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
 
 </resources>

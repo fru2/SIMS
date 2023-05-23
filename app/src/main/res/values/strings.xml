@@ -56,4 +56,10 @@
     <string name="xxxx">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
     <!--        summary-title6-->
     <string name="title6">Summary</string>
+<!--            sims-title7-->
+    <string name="title7">Student Information Management System</string>
+    <string name="version">v 1.0.1</string>
+    <string name="app_logo">App logo</string>
+    <string name="back_button">Go Back</string>
+
 </resources>

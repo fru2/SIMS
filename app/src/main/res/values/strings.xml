@@ -62,4 +62,11 @@
     <string name="app_logo">App logo</string>
     <string name="back_button">Go Back</string>
 
+
+
+<!--    Main activity (welcome screen string)-->
+    <string name="heading">SIMS: The Easy Way to Manage Your University records</string>
+    <string name="sub_heading">The SIMS app makes it easy to manage your student\'s records. You can view student grades, attendance, transcripts, and contact information. You can also track student progress and communicate with students and parents.</string>
+    <string name="button_txt">Get Started</string>
+
 </resources>

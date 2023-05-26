@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser currentUser = firebaseAuth.getCurrentUser();
 
         if (currentUser != null){
-            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+            Intent intent = new Intent(MainActivity.this, HomeNavigationActivity.class);
             startActivity(intent);
             finish();
         }

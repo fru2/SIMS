@@ -81,7 +81,7 @@
     <string name="log_in_subhead">To access all the features</string>
 
 
-    <!--    Home activity-->
+    <!--    Home Fragment -->
     <string name="good_morning">Good morning,</string>
     <string name="name">Lorem</string>
     <string name="student_data">Student data</string>

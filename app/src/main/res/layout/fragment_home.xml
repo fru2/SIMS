@@ -12,7 +12,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="40dp"
             tools:context=".HomeActivity">
 
             <ImageButton
@@ -27,7 +28,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/navigation_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
@@ -202,7 +203,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="40sp"
                 android:layout_marginTop="8dp"
@@ -281,7 +282,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:layout_width="301dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20sp"
                     android:layout_marginTop="140sp"
@@ -302,9 +303,9 @@
                 <ProgressBar
                     android:id="@+id/progressBar2"
                     style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="285dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20sp"
+                    android:layout_marginHorizontal="12dp"
                     android:layout_marginTop="160sp" />
 
                 <TextView

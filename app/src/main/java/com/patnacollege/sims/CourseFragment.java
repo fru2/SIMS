@@ -1,12 +1,15 @@
 package com.patnacollege.sims;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +62,23 @@ public class CourseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_course, container, false);
+        View view = inflater.inflate(R.layout.fragment_course, container, false);
+
+        LinearLayout courseMaterialBtn = view.findViewById(R.id.course_material_btn);
+        LinearLayout onlineTextbookBtn = view.findViewById(R.id.online_textbook_btn);
+
+
+        courseMaterialBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TextbookActivity.class);
+            startActivity(intent);
+        });
+
+        onlineTextbookBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TextbookActivity.class);
+            startActivity(intent);
+        });
+
+
+        return view;
     }
 }

@@ -7,13 +7,13 @@
     tools:context=".OptionsActivity">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:contentDescription="Menu button"
         android:padding="8dp"
-        android:src="@drawable/ic_hamburger_menu"
+        android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,11 +27,11 @@
         android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Profile" />
+        android:text="Profile" />
 
     <androidx.cardview.widget.CardView
         app:cardCornerRadius="8dp"
-        android:id="@+id/cardView"
+        android:id="@+id/student_information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
@@ -50,13 +50,14 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_alarm" />
+                android:src="@drawable/ic_alarm"
+                app:tint="@color/white"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:layout_marginStart="24dp"
-                tools:text="Course materials" />
+                android:text="Student information" />
 
 
         </LinearLayout>
@@ -64,14 +65,14 @@
 
     <androidx.cardview.widget.CardView
         app:cardCornerRadius="8dp"
-        android:id="@+id/cardView2"
+        android:id="@+id/notification"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/orange"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardView">
+        app:layout_constraintTop_toBottomOf="@id/student_information">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,13 +84,14 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_alarm" />
+                android:src="@drawable/ic_alarm"
+                app:tint="@color/white"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:layout_marginStart="24dp"
-                tools:text="Course materials" />
+                android:text="Notifications" />
 
 
         </LinearLayout>
@@ -97,14 +99,14 @@
 
     <androidx.cardview.widget.CardView
         app:cardCornerRadius="8dp"
-        android:id="@+id/cardView3"
+        android:id="@+id/about_app"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/orange"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardView2">
+        app:layout_constraintTop_toBottomOf="@id/notification">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -116,13 +118,14 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_alarm" />
+                android:src="@drawable/ic_alarm"
+                app:tint="@color/white"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:layout_marginStart="24dp"
-                tools:text="Course materials" />
+                android:text="About app" />
 
 
         </LinearLayout>
@@ -130,14 +133,14 @@
 
     <androidx.cardview.widget.CardView
         app:cardCornerRadius="8dp"
-        android:id="@+id/cardView4"
+        android:id="@+id/help"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/orange"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardView3">
+        app:layout_constraintTop_toBottomOf="@id/about_app">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -149,27 +152,62 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_alarm" />
+                android:src="@drawable/ic_alarm"
+                app:tint="@color/white"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:layout_marginStart="24dp"
-                tools:text="Course materials" />
+                android:text="Help?" />
 
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/help">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_alarm"
+                app:tint="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginStart="24dp"
+                android:text="Settings" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:layout_marginBottom="40dp"
+        android:background="@drawable/button_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="Log out" />
+        android:text="Log out" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

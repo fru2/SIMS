@@ -7,7 +7,7 @@
     tools:context=".NotificaionActivity">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -27,7 +27,7 @@
         android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Notifications" />
+        android:text="Notifications" />
 
 <!--    TODO: All the cardView will be under recycler view -->
 
@@ -49,7 +49,7 @@
             android:paddingVertical="16dp"
             android:textColor="@color/black"
             android:textSize="18sp"
-            tools:text="Application form avaiable" />
+            android:text="Application form avaiable" />
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -68,6 +68,6 @@
             android:paddingVertical="16dp"
             android:textColor="@color/black"
             android:textSize="18sp"
-            tools:text="Application form avaiable" />
+            android:text="Application form avaiable" />
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

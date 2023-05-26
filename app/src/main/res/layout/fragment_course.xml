@@ -32,7 +32,7 @@
             android:layout_marginStart="40dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Lectures" />
+            android:text="Lectures" />
 
         <!--    TODO : *Optional* Change the static grid to recycler view -->
         <GridLayout
@@ -59,35 +59,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="C"
+                        android:text="C"
                         android:textColor="@color/white"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="Prof abc."
-                        android:textColor="@color/white"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:backgroundTint="@color/orange"
-                app:cardCornerRadius="8dp"
-                android:layout_columnWeight="1">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="8dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        tools:text="C"
-                        android:textColor="@color/white"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        tools:text="Prof abc."
+                        android:text="Prof abc."
                         android:textColor="@color/white"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -105,35 +82,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="C"
+                        android:text="C"
                         android:textColor="@color/white"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="Prof abc."
-                        android:textColor="@color/white"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:backgroundTint="@color/orange"
-                app:cardCornerRadius="8dp"
-                android:layout_columnWeight="1">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="8dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        tools:text="C"
-                        android:textColor="@color/white"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        tools:text="Prof abc."
+                        android:text="Prof abc."
                         android:textColor="@color/white"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -151,12 +105,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="C"
+                        android:text="C"
                         android:textColor="@color/white"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="Prof abc."
+                        android:text="Prof abc."
                         android:textColor="@color/white"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -174,12 +128,58 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="C"
+                        android:text="C"
                         android:textColor="@color/white"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="Prof abc."
+                        android:text="Prof abc."
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/orange"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prof abc."
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/orange"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prof abc."
                         android:textColor="@color/white"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -195,7 +195,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/gridLayout"
-            tools:text="Quick Links" />
+            android:text="Quick Links" />
 
         <androidx.cardview.widget.CardView
             app:cardCornerRadius="8dp"
@@ -209,6 +209,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView2">
 
             <LinearLayout
+                android:id="@+id/course_material_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -220,12 +221,13 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textColor="@color/white"
-                    tools:text="Course materials" />
+                    android:text="Course materials" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_alarm" />
+                    android:src="@drawable/ic_alarm"
+                    app:tint="@color/white"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -241,6 +243,7 @@
             app:layout_constraintTop_toBottomOf="@+id/cardView">
 
             <LinearLayout
+                android:id="@+id/online_textbook_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -252,12 +255,13 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textColor="@color/white"
-                    tools:text="Online Textbooks" />
+                    android:text="Online Textbooks" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_alarm" />
+                    android:src="@drawable/ic_alarm"
+                    app:tint="@color/white"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -284,12 +288,13 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textColor="@color/white"
-                    tools:text="Class schedule" />
+                    android:text="Class schedule" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_alarm" />
+                    android:src="@drawable/ic_alarm"
+                    app:tint="@color/white"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

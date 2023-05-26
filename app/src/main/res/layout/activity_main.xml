@@ -9,12 +9,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
         android:layout_marginHorizontal="40dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_launcher_background"
-        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,36 +23,38 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/heading"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        android:text="@string/heading" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/sub_heading"
+        app:layout_constraintBottom_toTopOf="@+id/get_started_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:text="@string/sub_heading" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/get_started_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_marginHorizontal="40dp"
-        android:background="@drawable/border_box"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_background"
+        android:text="@string/button_txt"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:text="@string/button_txt" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

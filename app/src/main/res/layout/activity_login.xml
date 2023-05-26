@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingVertical="96dp"
     android:paddingHorizontal="40dp"
     tools:context=".MainActivity">
 
@@ -15,9 +15,10 @@
         android:textSize="32sp"
         android:textStyle="bold"
         android:textColor="@color/text_primary"
+        android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Log In" />
+        android:text="@string/log_in" />
 
     <TextView
         android:id="@+id/textView2"
@@ -27,35 +28,39 @@
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:text="To access all the features" />
+        android:text="@string/log_in_subhead" />
     <!--    -->
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/registration_edit_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginBottom="4dp"
         android:minHeight="48dp"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/dob_edit_txt"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:hint=""
-        tools:text="Registration number" />
+        android:text="@string/registration_no"
+        android:hint="@string/registration_no_hint"/>
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/dob_edit_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="48dp"
+        android:layout_marginBottom="4dp"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        tools:hint=""
-        tools:text="Dob" />
+        android:text="@string/dob"
+        android:hint="@string/dob_hint"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2">
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/log_in"
+        app:layout_constraintStart_toStartOf="parent">
 
         <CheckBox
             android:id="@+id/checkbox"
@@ -66,25 +71,28 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="I agree to all the " />
+            android:text="@string/tc_text_1"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            tools:text="Terms and Conditions" />
+            android:text="@string/tc_text_2"/>
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/log_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
         android:layout_marginTop="48dp"
+        android:background="@drawable/button_background"
+        android:text="@string/sign_in_button"
+        android:textSize="18sp"
+        android:layout_marginBottom="48dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:text="Sign In" />
-
-
-
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

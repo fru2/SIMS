@@ -69,4 +69,18 @@
     <string name="sub_heading">The SIMS app makes it easy to manage your student\'s records. You can view student grades, attendance, transcripts, and contact information. You can also track student progress and communicate with students and parents.</string>
     <string name="button_txt">Get Started</string>
 
+
+<!--    Login activity-->
+    <string name="sign_in_button">Sign In</string>
+    <string name="tc_text_1">I agree to all the\u0020</string>
+    <string name="tc_text_2">Terms and Conditions</string>
+    <string name="registration_no">Registration number</string>
+    <string name="registration_no_hint">2023UTSAV22</string>
+    <string name="dob">Date of birth</string>
+    <string name="dob_hint">22/02/2000</string>
+    <string name="log_in">Log In</string>
+    <string name="log_in_subhead">To access all the features</string>
+
+
+
 </resources>

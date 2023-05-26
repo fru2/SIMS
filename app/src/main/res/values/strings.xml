@@ -5,7 +5,7 @@
     <!--    studentManagementApp-title-->
     <string name="title">OTP Verification</string>
     <string name="sub_title">Enter the code from the sms we sent\nto +91 493743784</string>
-    <string name="receive">I didn\'t receive any code</string>
+    <string name="receive">I didn\'t receive any code\u0020</string>
     <string name="zero">00:00</string>
     <string name="resend">RESEND</string>
     <string name="submit">Submit</string>
@@ -56,21 +56,20 @@
     <string name="xxxx">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
     <!--        summary-title6-->
     <string name="title6">Summary</string>
-<!--            sims-title7-->
+    <!--            sims-title7-->
     <string name="title7">Student Information Management System</string>
     <string name="version">v 1.0.1</string>
     <string name="app_logo">App logo</string>
     <string name="back_button">Go Back</string>
 
 
-
-<!--    Main activity (welcome screen string)-->
+    <!--    Main activity (welcome screen string)-->
     <string name="heading">SIMS: The Easy Way to Manage Your University records</string>
     <string name="sub_heading">The SIMS app makes it easy to manage your student\'s records. You can view student grades, attendance, transcripts, and contact information. You can also track student progress and communicate with students and parents.</string>
     <string name="button_txt">Get Started</string>
 
 
-<!--    Login activity-->
+    <!--    Login activity-->
     <string name="sign_in_button">Sign In</string>
     <string name="tc_text_1">I agree to all the\u0020</string>
     <string name="tc_text_2">Terms and Conditions</string>
@@ -81,6 +80,15 @@
     <string name="log_in">Log In</string>
     <string name="log_in_subhead">To access all the features</string>
 
+
+    <!--    Home activity-->
+    <string name="good_morning">Good morning,</string>
+    <string name="name">Lorem</string>
+    <string name="student_data">Student data</string>
+    <string name="id_no">ID no.</string>
+    <string name="placeholder_id">202023SAHIL21</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

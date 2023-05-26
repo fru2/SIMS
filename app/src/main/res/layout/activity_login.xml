@@ -84,7 +84,6 @@
         android:id="@+id/log_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
         android:background="@drawable/button_background"
         android:text="@string/sign_in_button"
         android:textSize="18sp"

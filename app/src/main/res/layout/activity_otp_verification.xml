@@ -13,11 +13,11 @@
         android:layout_height="wrap_content"
         android:text="@string/title"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/sub_title"
@@ -51,47 +51,45 @@
 
     <TextView
         android:id="@+id/receive"
-        android:layout_width="292dp"
-        android:layout_height="36dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/receive"
         android:textAlignment="center"
         android:textColor="@color/grey"
         android:clickable="true"
         android:textSize="15sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintEnd_toStartOf="@id/resend"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.551" />
 
     <TextView
         android:id="@+id/resend"
-        android:layout_width="80dp"
-        android:layout_height="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/resend"
         android:textColor="@color/grey"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/receive"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.779"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+
+        app:layout_constraintStart_toEndOf="@id/receive"
+        app:layout_constraintTop_toTopOf="@id/receive" />
 
 
     <Button
-        android:id="@+id/submitBtn"
+        android:id="@+id/submit_btn"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/orange"
         android:text="@string/submit"
         android:textStyle="bold"
-        android:onClick="myMethod"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/otp4"

@@ -19,11 +19,14 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:background="@color/white"
         app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/navigation_menu" />
+        app:menu="@menu/navigation_menu"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemActiveIndicatorStyle="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
+        />
 
 
 </RelativeLayout>

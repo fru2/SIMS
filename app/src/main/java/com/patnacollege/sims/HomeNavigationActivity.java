@@ -67,7 +67,10 @@ public class HomeNavigationActivity extends AppCompatActivity {
         } else {
             fragmentTransaction.add(R.id.fragment_container, fragment);
         }
-        fragmentTransaction.hide(activeFragment);
+
+        if (activeFragment != null && activeFragment != fragment) {
+            fragmentTransaction.hide(activeFragment);
+        }
         fragmentTransaction.commit();
         activeFragment = fragment;
     }

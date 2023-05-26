@@ -6,7 +6,7 @@
         <item name="colorPrimary">@color/orange</item>
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar">true</item>
-        <item name="android:navigationBarColor">@color/light_grey</item>
+        <item name="android:navigationBarColor">@color/white</item>
     </style>
 
     <style name="Theme.SIMS" parent="Base.Theme.SIMS" />

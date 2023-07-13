@@ -1,6 +1,7 @@
 package com.patnacollege.sims;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
@@ -67,18 +68,24 @@ public class CourseFragment extends Fragment {
         LinearLayout courseMaterialBtn = view.findViewById(R.id.course_material_btn);
         LinearLayout onlineTextbookBtn = view.findViewById(R.id.online_textbook_btn);
 
-
         courseMaterialBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), TextbookActivity.class);
-            startActivity(intent);
+            String courseMaterialUrl = "https://www.youtube.com/@ApnaCollegeOfficial";
+            openWebPage(courseMaterialUrl);
         });
 
         onlineTextbookBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), TextbookActivity.class);
-            startActivity(intent);
+            String onlineTextbookUrl = "https://examupdates.in/bca-books/";
+            openWebPage(onlineTextbookUrl);
         });
 
-
         return view;
+    }
+
+    private void openWebPage(String url) {
+        Uri webpage = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (intent.resolveActivity(requireActivity().getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 }

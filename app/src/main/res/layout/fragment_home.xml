@@ -16,35 +16,13 @@
             android:paddingBottom="40dp"
             tools:context=".HomeActivity">
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:contentDescription="Menu button"
-                android:padding="8dp"
-                android:src="@drawable/ic_hamburger_menu"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageButton
-                android:id="@+id/navigation_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:contentDescription="Notificaion button"
-                android:padding="20dp"
-                android:src="@drawable/ic_alarm"
-                app:layout_constraintBottom_toBottomOf="@id/imageButton"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/imageButton" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
-                android:layout_marginTop="96dp"
+                android:layout_marginTop="80dp"
                 android:text="@string/good_morning"
                 android:textColor="@color/text_primary"
                 android:textSize="32sp"
@@ -52,7 +30,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -73,7 +51,7 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/name" />
 
             <LinearLayout
                 android:id="@+id/linearLayout"
@@ -96,7 +74,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/registration_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/placeholder_id"
@@ -162,6 +140,7 @@
                         tools:ignore="RtlSymmetry" />
 
                     <TextView
+                        android:id="@+id/attendance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -184,12 +163,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/attendance"
+                        android:text="Grade"
                         android:textColor="@android:color/white"
                         android:textSize="20sp"
                         tools:ignore="RtlSymmetry" />
 
                     <TextView
+                        android:id="@+id/grade"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -217,6 +197,7 @@
 
 
                 <TextView
+                    android:id="@+id/subject"
                     android:layout_width="134sp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20sp"
@@ -333,4 +314,39 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:contentDescription="Menu button"
+            android:padding="12dp"
+            android:src="@drawable/ic_hamburger_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/navigation_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@android:color/transparent"
+            android:contentDescription="Notificaion button"
+            android:padding="20dp"
+            android:src="@drawable/ic_alarm"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </FrameLayout>

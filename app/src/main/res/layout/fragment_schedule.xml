@@ -11,17 +11,6 @@
         android:layout_height="match_parent"
         tools:context=".HomeActivity">
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            tools:contentDescription="Menu button"
-            android:padding="8dp"
-            android:src="@drawable/ic_hamburger_menu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <!--    TODO: Remove textStyle="Bold" and replace with dynamic font-->
         <TextView
             android:id="@+id/textView"
@@ -29,7 +18,7 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:layout_marginTop="96dp"
+            android:layout_marginTop="80dp"
             android:layout_marginStart="40dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -281,7 +270,7 @@
                     android:layout_height="wrap_content"
                     android:padding="16dp">
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/subject"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
@@ -291,11 +280,11 @@
                         app:layout_constraintStart_toStartOf="parent"
                         android:text="Java"/>
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
-                        app:layout_constraintTop_toBottomOf="@id/textView5"
+                        app:layout_constraintTop_toBottomOf="@id/subject"
                         app:layout_constraintStart_toStartOf="parent"
                         android:text="8 am - 10 am" />
 
@@ -313,7 +302,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="24dp"
                         android:progressBackgroundTint="@color/white"
-                        app:layout_constraintTop_toBottomOf="@id/textView6"
+                        app:layout_constraintTop_toBottomOf="@id/time"
                         app:layout_constraintStart_toStartOf="parent"/>
                     <TextView
                         android:id="@+id/textView7"
@@ -324,7 +313,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         android:text="Progress" />
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/subject_progress"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"

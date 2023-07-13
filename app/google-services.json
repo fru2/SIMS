@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "212326809508",
+    "firebase_url": "https://studentdetails-1ac38-default-rtdb.firebaseio.com",
+    "project_id": "studentdetails-1ac38",
+    "storage_bucket": "studentdetails-1ac38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212326809508:android:15b342a5cba712f1c54b31",
+        "android_client_info": {
+          "package_name": "com.patnacollege.sims"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212326809508-c5p85lpjpa0t6jvu9eim4dknenlrg9js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlOxUq_6xk_W53U8u-SCFLI-_uKQF4-Wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212326809508-c5p85lpjpa0t6jvu9eim4dknenlrg9js.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

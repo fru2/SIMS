@@ -4,7 +4,7 @@
 
     <!--    studentManagementApp-title-->
     <string name="title">OTP Verification</string>
-    <string name="sub_title">Enter the code from the sms we sent\nto +91 493743784</string>
+    <string name="sub_title">Enter the code from the sms we sent to</string>
     <string name="receive">I didn\'t receive any code\u0020</string>
     <string name="zero">00:00</string>
     <string name="resend">RESEND</string>

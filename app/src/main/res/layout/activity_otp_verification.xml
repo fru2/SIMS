@@ -3,9 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/menu"
+        android:src="@drawable/ic_back"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/title"
@@ -21,33 +30,39 @@
 
     <TextView
         android:id="@+id/sub_title"
-        android:layout_width="292dp"
-        android:layout_height="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/sub_title"
         android:textAlignment="center"
         android:textColor="@color/grey"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278" />
+        app:layout_constraintTop_toBottomOf="@+id/title"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your registered phone number."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub_title" />
+
 
     <TextView
         android:id="@+id/timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
         android:text="@string/zero"
+        android:textAlignment="center"
         android:textColor="@color/orange"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.386" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
         android:id="@+id/receive"
@@ -58,19 +73,18 @@
         android:textColor="@color/grey"
         android:clickable="true"
         android:textSize="15sp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/submit_btn"
         app:layout_constraintEnd_toStartOf="@id/resend"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/resend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/resend"
-        android:textColor="@color/grey"
+        android:textColor="@color/orange"
         app:layout_constraintBottom_toBottomOf="@id/receive"
         app:layout_constraintEnd_toEndOf="parent"
 
@@ -91,66 +105,94 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/otp4"
-        android:layout_width="37dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="108dp"
-        android:background="@drawable/edit_text_border"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.451" />
-
-    <EditText
-        android:id="@+id/otp3"
-        android:layout_width="37dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/edit_text_border"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/otp4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.451" />
-
-    <EditText
-        android:id="@+id/otp1"
-        android:layout_width="37dp"
-        android:layout_height="33dp"
-        android:background="@drawable/edit_text_border"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/otp2"
-        app:layout_constraintHorizontal_bias="0.878"
-
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.451" />
+        app:layout_constraintTop_toBottomOf="@+id/timer">
 
-    <EditText
-        android:id="@+id/otp2"
-        android:layout_width="37dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/edit_text_border"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/otp3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.451" />
+        <EditText
+            android:id="@+id/otp1"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_text_border"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:maxLength="1"/>
+
+        <EditText
+            android:id="@+id/otp2"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_text_border"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:maxLength="1"/>
+
+        <EditText
+            android:id="@+id/otp3"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_text_border"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:maxLength="1"/>
+
+        <EditText
+            android:id="@+id/otp4"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:maxLength="1"
+            />
+        <EditText
+            android:id="@+id/otp5"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:maxLength="1"
+            />
+        <EditText
+            android:id="@+id/otp6"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:maxLength="1"
+            />
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

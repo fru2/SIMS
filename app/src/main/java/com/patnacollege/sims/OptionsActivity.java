@@ -5,7 +5,10 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class OptionsActivity extends AppCompatActivity {
 
@@ -20,6 +23,8 @@ public class OptionsActivity extends AppCompatActivity {
         CardView notification = findViewById(R.id.notification);
         CardView aboutApp = findViewById(R.id.about_app);
         CardView help = findViewById(R.id.help);
+
+        Button logOut = findViewById(R.id.log_out);
 
 
         backBtn.setOnClickListener(v -> {
@@ -39,6 +44,15 @@ public class OptionsActivity extends AppCompatActivity {
         aboutApp.setOnClickListener(v -> {
             Intent intent = new Intent(OptionsActivity.this, AboutActivity.class);
             startActivity(intent);
+        });
+
+        logOut.setOnClickListener(v -> {
+            FirebaseAuth.getInstance().signOut();
+            Intent intent = getBaseContext().getPackageManager().getLaunchIntentForPackage(getBaseContext().getPackageName());
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            finish();
+            System.exit(0);
         });
 
     }

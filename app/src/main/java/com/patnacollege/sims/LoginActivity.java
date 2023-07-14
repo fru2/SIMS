@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -32,13 +33,26 @@ public class LoginActivity extends AppCompatActivity {
         EditText dob = findViewById(R.id.dob_edit_txt);
         Button logIn = findViewById(R.id.log_in);
 
+        CheckBox tcButton = findViewById(R.id.checkbox);
 
-        logIn.setOnClickListener(v -> {
-            checkCredential();
+        Boolean active = false;
+
+        tcButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                logIn.setOnClickListener(v -> {
+                    checkCredential();
+                });
+            }
+            else{
+                logIn.setOnClickListener(v -> {
+                    makeToast("Please check the T&C button");
+                });
+            }
         });
 
+        }
 
-    }
+
 
 
     public void makeToast(String msg){

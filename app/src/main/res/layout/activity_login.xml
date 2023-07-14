@@ -40,8 +40,7 @@
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/dob_edit_txt"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/registration_no"
-        android:hint="@string/registration_no_hint"/>
+        android:hint="@string/registration_no"/>
 
     <EditText
         android:id="@+id/dob_edit_txt"
@@ -52,8 +51,7 @@
         android:inputType="date"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/dob"
-        android:hint="@string/dob_hint"/>
+        android:hint="@string/dob"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"

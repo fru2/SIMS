@@ -77,7 +77,7 @@
                     android:id="@+id/registration_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/placeholder_id"
+                    tools:text="@string/placeholder_id"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -98,12 +98,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="16dp"
-                    android:text="@string/id_no"
+                    android:text="Semester"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/semester_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/placeholder_id"
@@ -173,7 +173,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="@string/progressPercentage"
+                        android:text="0 CGPA"
                         android:textAlignment="center"
                         android:textColor="@android:color/white" />
                 </LinearLayout>
@@ -182,10 +182,11 @@
 
 
             <androidx.cardview.widget.CardView
+                android:visibility="gone"
                 android:id="@+id/card1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="40sp"
+                android:layout_marginHorizontal="41sp"
                 android:layout_marginTop="8dp"
                 android:backgroundTint="@color/orange"
                 android:clickable="true"
@@ -272,14 +273,6 @@
                     android:textSize="12sp" />
 
 
-                <ImageView
-                    android:id="@+id/miniProfileLogo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="280sp"
-                    android:contentDescription="@string/bookImage"
-                    android:paddingTop="10sp"
-                    app:srcCompat="@drawable/ic_mini_profile" />
 
                 <ProgressBar
                     android:id="@+id/progressBar2"

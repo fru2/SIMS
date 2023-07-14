@@ -20,7 +20,6 @@ public class OptionsActivity extends AppCompatActivity {
         CardView notification = findViewById(R.id.notification);
         CardView aboutApp = findViewById(R.id.about_app);
         CardView help = findViewById(R.id.help);
-        CardView settings = findViewById(R.id.settings);
 
 
         backBtn.setOnClickListener(v -> {
@@ -39,11 +38,6 @@ public class OptionsActivity extends AppCompatActivity {
 
         aboutApp.setOnClickListener(v -> {
             Intent intent = new Intent(OptionsActivity.this, AboutActivity.class);
-            startActivity(intent);
-        });
-
-        settings.setOnClickListener(v -> {
-            Intent intent = new Intent(OptionsActivity.this, SettingsActivity.class);
             startActivity(intent);
         });
 

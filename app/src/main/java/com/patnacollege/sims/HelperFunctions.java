@@ -1,6 +1,9 @@
 package com.patnacollege.sims;
 
+import static android.content.Context.MODE_PRIVATE;
+
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -15,4 +18,5 @@ public class HelperFunctions {
         final String TAG = "LODA_ERROR";
         Log.d(TAG, "logText: " + str);
     }
+
 }
